@@ -1,17 +1,35 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { SportCard } from "@/components/sport-card"
-import { TeamsSection } from "@/components/teams-section"
-import { sportsData } from "@/lib/sports-data"
+import { useState, useRef, useEffect } from "react";
+import { SportCard } from "@/components/sport-card";
+import { TeamsSection } from "@/components/teams-section";
+import { sportsData } from "@/lib/sports-data";
 
 export function SportsGrid() {
-  const [selectedSport, setSelectedSport] = useState<string | null>(null)
+  const [selectedSport, setSelectedSport] = useState<string | null>(null);
+  const teamsSectionRef = useRef<HTMLDivElement>(null);
+
+  const handleSportClick = (sportId: string) => {
+    setSelectedSport(sportId);
+  };
+
+  useEffect(() => {
+    if (selectedSport && teamsSectionRef.current) {
+      setTimeout(() => {
+        teamsSectionRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+    }
+  }, [selectedSport]);
 
   return (
     <section id="sports" className="py-20 px-4">
       <div className="container mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-12 tracking-tighter">SPORTS</h2>
+        <h2 className="text-5xl md:text-6xl font-bold mb-12 tracking-tighter">
+          SPORTS
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {sportsData.map((sport) => (
@@ -19,13 +37,19 @@ export function SportsGrid() {
               key={sport.id}
               sport={sport}
               isSelected={selectedSport === sport.id}
-              onClick={() => setSelectedSport(sport.id)}
+              onClick={() => handleSportClick(sport.id)}
             />
           ))}
         </div>
 
-        {selectedSport && <TeamsSection sport={sportsData.find((s) => s.id === selectedSport)!} />}
+        <div ref={teamsSectionRef}>
+          {selectedSport && (
+            <TeamsSection
+              sport={sportsData.find((s) => s.id === selectedSport)!}
+            />
+          )}
+        </div>
       </div>
     </section>
-  )
+  );
 }

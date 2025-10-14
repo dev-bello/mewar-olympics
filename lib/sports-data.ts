@@ -4,6 +4,9 @@ import type { LucideIcon } from "lucide-react";
 export interface Player {
   name: string;
   position: string;
+  jerseyNumber: number;
+  passportImage: string;
+  level: number;
   registered: boolean;
   isCaptain?: boolean;
 }
@@ -39,12 +42,18 @@ export const sportsData: Sport[] = [
           {
             name: "Ammar",
             position: "Midfielder",
+            jerseyNumber: 8,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
           {
             name: "Ahmad Bello Kware",
             position: "Defender",
+            jerseyNumber: 5,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: false,
           },
         ],
@@ -56,10 +65,20 @@ export const sportsData: Sport[] = [
           {
             name: "Abdullahi Rabo",
             position: "Goalkeeper",
+            jerseyNumber: 1,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
-          { name: "Dahoud Yahaya", position: "Midfielder", registered: false },
+          {
+            name: "Dahoud Yahaya",
+            position: "Midfielder",
+            jerseyNumber: 4,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
+            registered: false,
+          },
         ],
       },
       {
@@ -69,12 +88,18 @@ export const sportsData: Sport[] = [
           {
             name: "Umar Sani",
             position: "Forward",
+            jerseyNumber: 9,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
           {
             name: "Lawal Basiru Dan'isa",
             position: "Midfielder",
+            jerseyNumber: 6,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: false,
           },
         ],
@@ -86,12 +111,18 @@ export const sportsData: Sport[] = [
           {
             name: "Salim Atiku",
             position: "Midfielder",
+            jerseyNumber: 10,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
           {
-            name: "Umar",
+            name: "Umar Salihu",
             position: "Midfielder",
+            jerseyNumber: 5,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: false,
           },
         ],
@@ -103,12 +134,18 @@ export const sportsData: Sport[] = [
           {
             name: "Salim Umar",
             position: "Forward",
+            jerseyNumber: 9,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
           {
             name: "Walid Kolo",
             position: "Midfielder",
+            jerseyNumber: 11,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: false,
           },
         ],
@@ -120,6 +157,9 @@ export const sportsData: Sport[] = [
           {
             name: "undefined",
             position: "Forward",
+            jerseyNumber: 99,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
@@ -132,6 +172,9 @@ export const sportsData: Sport[] = [
           {
             name: "undefined",
             position: "Forward",
+            jerseyNumber: 99,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
@@ -154,6 +197,9 @@ export const sportsData: Sport[] = [
           {
             name: "Tajudin Muhammad",
             position: "Outside Hitter",
+            jerseyNumber: 1,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
@@ -166,6 +212,9 @@ export const sportsData: Sport[] = [
           {
             name: "Omalaran",
             position: "Outside Hitter",
+            jerseyNumber: 1,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
@@ -188,6 +237,9 @@ export const sportsData: Sport[] = [
           {
             name: "Bello Yahaya Mara",
             position: "Board 1",
+            jerseyNumber: 1,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
           },
         ],
@@ -209,6 +261,9 @@ export const sportsData: Sport[] = [
           {
             name: "Lookman Zayyad",
             position: "Point Guard",
+            jerseyNumber: 23,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
@@ -221,11 +276,21 @@ export const sportsData: Sport[] = [
           {
             name: "Jesse",
             position: "Point Guard",
+            jerseyNumber: 30,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
 
-          { name: "Dodo", position: "Center", registered: false },
+          {
+            name: "Dodo",
+            position: "Center",
+            jerseyNumber: 12,
+            passportImage: "/placeholder-user.jpg",
+            level: 200,
+            registered: false,
+          },
         ],
       },
     ],
@@ -245,6 +310,9 @@ export const sportsData: Sport[] = [
           {
             name: "Lookman Zayyad",
             position: "Point Guard",
+            jerseyNumber: 1,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
@@ -257,11 +325,21 @@ export const sportsData: Sport[] = [
           {
             name: "Jesse",
             position: "Point Guard",
+            jerseyNumber: 2,
+            passportImage: "/placeholder-user.jpg",
+            level: 400,
             registered: true,
             isCaptain: true,
           },
 
-          { name: "Dodo", position: "Center", registered: false },
+          {
+            name: "Dodo",
+            position: "Center",
+            jerseyNumber: 3,
+            passportImage: "/placeholder-user.jpg",
+            level: 200,
+            registered: false,
+          },
         ],
       },
     ],
