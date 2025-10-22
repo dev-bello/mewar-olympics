@@ -7,6 +7,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { FixturesToolbar } from "./fixtures-toolbar";
+import { ScrollArea } from "./ui/scroll-area";
 
 export function FixturesModal() {
   return (
@@ -18,7 +19,9 @@ export function FixturesModal() {
         <DialogHeader>
           <DialogTitle>Fixtures & Results</DialogTitle>
         </DialogHeader>
-        <FixturesToolbar />
+        <ScrollArea className="h-[70vh]">
+          <FixturesToolbar />
+        </ScrollArea>
       </DialogContent>
     </Dialog>
   );
