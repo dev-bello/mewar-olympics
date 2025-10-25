@@ -41,7 +41,7 @@ export function PlayerModal({ player, isOpen, onClose }: PlayerModalProps) {
               #{player.jerseyNumber}
             </p>
             <p className="text-xs text-muted-foreground">
-              {player.level} Level
+              {player.level} {player.level === "Staff" ? "" : "Level"}
             </p>
           </div>
         </div>

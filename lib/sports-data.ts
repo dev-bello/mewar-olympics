@@ -1,5 +1,4 @@
 import { Users, Volleyball, Brain } from "lucide-react";
-// Added a comment to trigger re-evaluation
 import type { LucideIcon } from "lucide-react";
 
 export interface Player {
@@ -7,7 +6,7 @@ export interface Player {
   position: string;
   jerseyNumber: number;
   passportImage: string;
-  level: number;
+  level: number | "Staff";
   registered: boolean;
   isCaptain?: boolean;
 }
@@ -703,7 +702,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 10,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: true,
             isCaptain: true,
           },
@@ -712,7 +711,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 5,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -720,7 +719,7 @@ export const sportsData: Sport[] = [
             position: "Forward",
             jerseyNumber: 9,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -728,7 +727,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 7,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -736,7 +735,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 4,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -744,7 +743,7 @@ export const sportsData: Sport[] = [
             position: "Forward",
             jerseyNumber: 11,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -752,7 +751,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 8,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -760,7 +759,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 3,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -768,7 +767,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 6,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -776,7 +775,7 @@ export const sportsData: Sport[] = [
             position: "Forward",
             jerseyNumber: 19,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -784,7 +783,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 2,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -792,7 +791,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 14,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -800,7 +799,7 @@ export const sportsData: Sport[] = [
             position: "Forward",
             jerseyNumber: 17,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -808,7 +807,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 15,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -816,7 +815,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 18,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -824,7 +823,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 12,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -832,7 +831,7 @@ export const sportsData: Sport[] = [
             position: "Forward",
             jerseyNumber: 20,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -840,7 +839,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 13,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
           {
@@ -848,7 +847,7 @@ export const sportsData: Sport[] = [
             position: "Goalkeeper",
             jerseyNumber: 1,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: 200,
             registered: false,
           },
         ],
@@ -862,7 +861,7 @@ export const sportsData: Sport[] = [
             position: "Forward",
             jerseyNumber: 10,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: true,
           },
           {
@@ -870,7 +869,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 8,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: false,
           },
           {
@@ -878,7 +877,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 5,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: false,
             isCaptain: true,
           },
@@ -887,7 +886,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 7,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: false,
           },
           {
@@ -895,7 +894,7 @@ export const sportsData: Sport[] = [
             position: "Forward",
             jerseyNumber: 9,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: false,
           },
           {
@@ -903,7 +902,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 4,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: false,
           },
           {
@@ -911,7 +910,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 6,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: false,
           },
           {
@@ -919,7 +918,7 @@ export const sportsData: Sport[] = [
             position: "Defender",
             jerseyNumber: 3,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: false,
           },
           {
@@ -927,7 +926,7 @@ export const sportsData: Sport[] = [
             position: "Midfielder",
             jerseyNumber: 11,
             passportImage: "/placeholder-user.jpg",
-            level: 400,
+            level: "Staff",
             registered: false,
           },
         ],
