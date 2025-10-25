@@ -9,6 +9,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Mewar Olympics - School Sports Week",
   description: "Official website for Mewar Olympics school sports week ",
+  icons: {
+    icon: "/miuo.PNG",
+  },
 };
 
 export default function RootLayout({

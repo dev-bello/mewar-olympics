@@ -20,7 +20,20 @@ export function FixturesToolbar() {
                 <p>
                   {fixture.teamA} vs {fixture.teamB}
                 </p>
-                <p>{new Date(fixture.date).toLocaleString()}</p>
+                <p>
+                  {new Date(fixture.date).toLocaleDateString("en-GB", {
+                    weekday: "long",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}{" "}
+                  -{" "}
+                  {new Date(fixture.date).toLocaleTimeString("en-GB", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    timeZone: "Africa/Lagos",
+                  })}
+                </p>
               </Card>
             ))}
           </div>
