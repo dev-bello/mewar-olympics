@@ -104,7 +104,7 @@ export interface FootballTableRow {
 }
 
 export const footballTableData: FootballTableRow[] = [
-  { team: "Economics", p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { team: "Economics", p: 1, w: 0, d: 1, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
   {
     team: "Software Engineering",
     p: 0,
@@ -118,9 +118,9 @@ export const footballTableData: FootballTableRow[] = [
   },
   {
     team: "Computer Science",
-    p: 0,
+    p: 1,
     w: 0,
-    d: 0,
+    d: 1,
     l: 0,
     gf: 0,
     ga: 0,
