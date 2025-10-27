@@ -13,12 +13,12 @@ export interface Result {
 }
 
 export const fixturesData: Fixture[] = [
-  {
-    sport: "Football",
-    teamA: "Economics",
-    teamB: "Computer Science",
-    date: "2025-10-27T16:00:00+01:00", // 4:00 PM WAT
-  },
+  // {
+  //   sport: "Football",
+  //   teamA: "Economics",
+  //   teamB: "Computer Science",
+  //   date: "2025-10-27T16:00:00+01:00", // 4:00 PM WAT
+  // },
   {
     sport: "Football",
     teamA: "Software Engineering",
@@ -88,7 +88,12 @@ export const fixturesData: Fixture[] = [
 ];
 
 export const resultsData: Result[] = [
-  // Results will be added as matches are completed
+  {
+    sport: "Football",
+    teamA: "Economics",
+    teamB: "Computer Science",
+    score: "0-0",
+  },
 ];
 
 export interface FootballTableRow {
@@ -100,11 +105,11 @@ export interface FootballTableRow {
   gf: number; // Goals For
   ga: number; // Goals Against
   gd: number; // Goal Difference
-  pts: number; // Points
+  pts: string; // Points
 }
 
 export const footballTableData: FootballTableRow[] = [
-  { team: "Economics", p: 1, w: 0, d: 1, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { team: "Economics", p: 1, w: 0, d: 1, l: 0, gf: 0, ga: 0, gd: 0, pts: "-" },
   {
     team: "Software Engineering",
     p: 0,
@@ -114,7 +119,7 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: 0,
+    pts: "0",
   },
   {
     team: "Computer Science",
@@ -125,7 +130,7 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: 0,
+    pts: "-",
   },
   {
     team: "Bio Technology",
@@ -136,7 +141,7 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: 0,
+    pts: "0",
   },
   {
     team: "Public Administration",
@@ -147,7 +152,7 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: 0,
+    pts: "0",
   },
   {
     team: "Cyber Security",
@@ -158,10 +163,10 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: 0,
+    pts: "0",
   },
-  { team: "Law", p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
-  { team: "Staff", p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { team: "Law", p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: "0" },
+  { team: "Staff", p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: "0" },
 ];
 
 // Tournament Rules:
