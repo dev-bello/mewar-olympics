@@ -19,12 +19,12 @@ export const fixturesData: Fixture[] = [
   //   teamB: "Computer Science",
   //   date: "2025-10-27T16:00:00+01:00", // 4:00 PM WAT
   // },
-  {
-    sport: "Football",
-    teamA: "Software Engineering",
-    teamB: "Law",
-    date: "2025-10-28T16:00:00+01:00",
-  },
+  // {
+  //   sport: "Football",
+  //   teamA: "Software Engineering",
+  //   teamB: "Law",
+  //   date: "2025-10-28T16:00:00+01:00",
+  // },
   {
     sport: "Football",
     teamA: "Public Administration",
@@ -94,6 +94,12 @@ export const resultsData: Result[] = [
     teamB: "Computer Science",
     score: "0-0",
   },
+  {
+    sport: "Football",
+    teamA: "Software Engineering",
+    teamB: "Law",
+    score: "5-0",
+  },
 ];
 
 export interface FootballTableRow {
@@ -105,22 +111,22 @@ export interface FootballTableRow {
   gf: number; // Goals For
   ga: number; // Goals Against
   gd: number; // Goal Difference
-  pts: string; // Points
+  pts: number; // Points
 }
 
 export const footballTableData: FootballTableRow[] = [
-  { team: "Economics", p: 1, w: 0, d: 1, l: 0, gf: 0, ga: 0, gd: 0, pts: "-" },
   {
     team: "Software Engineering",
-    p: 0,
-    w: 0,
+    p: 1,
+    w: 1,
     d: 0,
     l: 0,
-    gf: 0,
+    gf: 5,
     ga: 0,
-    gd: 0,
-    pts: "0",
+    gd: 5,
+    pts: 3,
   },
+  { team: "Economics", p: 1, w: 0, d: 1, l: 0, gf: 0, ga: 0, gd: 0, pts: 1 },
   {
     team: "Computer Science",
     p: 1,
@@ -130,7 +136,7 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: "-",
+    pts: 1,
   },
   {
     team: "Bio Technology",
@@ -141,7 +147,7 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: "0",
+    pts: 0,
   },
   {
     team: "Public Administration",
@@ -152,7 +158,7 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: "0",
+    pts: 0,
   },
   {
     team: "Cyber Security",
@@ -163,10 +169,10 @@ export const footballTableData: FootballTableRow[] = [
     gf: 0,
     ga: 0,
     gd: 0,
-    pts: "0",
+    pts: 0,
   },
-  { team: "Law", p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: "0" },
-  { team: "Staff", p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: "0" },
+  { team: "Staff", p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { team: "Law", p: 1, w: 0, d: 0, l: 1, gf: 0, ga: 5, gd: -5, pts: 0 },
 ];
 
 // Tournament Rules:
