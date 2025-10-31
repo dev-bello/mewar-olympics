@@ -15,12 +15,6 @@ export interface Result {
 export const fixturesData: Fixture[] = [
   {
     sport: "Football",
-    teamA: "Staff",
-    teamB: "Computer Science",
-    date: "2025-10-31T16:00:00+01:00",
-  },
-  {
-    sport: "Football",
     teamA: "Economics",
     teamB: "Software Engineering",
     date: "2025-11-01T07:00:00+01:00",
