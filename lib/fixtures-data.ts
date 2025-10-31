@@ -89,6 +89,12 @@ export const resultsData: Result[] = [
     teamB: "Bio Technology",
     score: "3-2",
   },
+  {
+    sport: "Football",
+    teamA: "Computer Science",
+    teamB: "Staff",
+    score: "0-1",
+  },
 ];
 
 export interface FootballTableRow {
@@ -137,16 +143,17 @@ export const footballTableData: FootballTableRow[] = [
     gd: 1,
     pts: 3,
   },
+  { team: "Staff", p: 2, w: 1, d: 0, l: 1, gf: 2, ga: 2, gd: 0, pts: 3 },
   { team: "Economics", p: 1, w: 0, d: 1, l: 0, gf: 0, ga: 0, gd: 0, pts: 1 },
   {
     team: "Computer Science",
-    p: 1,
+    p: 2,
     w: 0,
     d: 1,
-    l: 0,
+    l: 1,
     gf: 0,
-    ga: 0,
-    gd: 0,
+    ga: 1,
+    gd: -1,
     pts: 1,
   },
   {
@@ -160,7 +167,6 @@ export const footballTableData: FootballTableRow[] = [
     gd: -1,
     pts: 0,
   },
-  { team: "Staff", p: 1, w: 0, d: 0, l: 1, gf: 1, ga: 2, gd: -1, pts: 0 },
   { team: "Law", p: 1, w: 0, d: 0, l: 1, gf: 0, ga: 5, gd: -5, pts: 0 },
 ];
 
