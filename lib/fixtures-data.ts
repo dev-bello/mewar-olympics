@@ -15,12 +15,6 @@ export interface Result {
 export const fixturesData: Fixture[] = [
   {
     sport: "Football",
-    teamA: "Economics",
-    teamB: "Software Engineering",
-    date: "2025-11-01T07:00:00+01:00",
-  },
-  {
-    sport: "Football",
     teamA: "Public Administration",
     teamB: "Cyber Security",
     date: "2025-11-01T16:00:00+01:00",
@@ -89,6 +83,12 @@ export const resultsData: Result[] = [
     teamB: "Staff",
     score: "0-1",
   },
+  {
+    sport: "Football",
+    teamA: "Software Engineering",
+    teamB: "Economics",
+    score: "4-0",
+  },
 ];
 
 export interface FootballTableRow {
@@ -106,14 +106,14 @@ export interface FootballTableRow {
 export const footballTableData: FootballTableRow[] = [
   {
     team: "Software Engineering",
-    p: 1,
-    w: 1,
+    p: 2,
+    w: 2,
     d: 0,
     l: 0,
-    gf: 5,
+    gf: 9,
     ga: 0,
-    gd: 5,
-    pts: 3,
+    gd: 9,
+    pts: 6,
   },
   {
     team: "Cyber Security",
@@ -138,7 +138,6 @@ export const footballTableData: FootballTableRow[] = [
     pts: 3,
   },
   { team: "Staff", p: 2, w: 1, d: 0, l: 1, gf: 2, ga: 2, gd: 0, pts: 3 },
-  { team: "Economics", p: 1, w: 0, d: 1, l: 0, gf: 0, ga: 0, gd: 0, pts: 1 },
   {
     team: "Computer Science",
     p: 2,
@@ -150,6 +149,7 @@ export const footballTableData: FootballTableRow[] = [
     gd: -1,
     pts: 1,
   },
+  { team: "Economics", p: 2, w: 0, d: 1, l: 1, gf: 0, ga: 4, gd: -4, pts: 1 },
   {
     team: "Bio Technology",
     p: 1,
