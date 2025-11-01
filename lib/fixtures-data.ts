@@ -170,3 +170,29 @@ export const footballTableData: FootballTableRow[] = [
 //   1. Points (3 for win, 1 for draw, 0 for loss)
 //   2. Goal Difference (GD)
 //   3. Goals Scored (GF)
+
+export interface TopScorer {
+  name: string;
+  team: string;
+  goals: number;
+}
+
+export interface CleanSheet {
+  name: string;
+  team: string;
+  matches: number;
+}
+
+export const topScorersData: TopScorer[] = [
+  { name: "Faiz Adeyemi", team: "Software Engineering", goals: 5 },
+  { name: "Saidu Maigishir", team: "Software Engineering", goals: 2 },
+  { name: "Sardauna", team: "Public Administration", goals: 2 },
+  { name: "Sir Ibrahim", team: "Staff", goals: 1 },
+  { name: "Kakasha", team: "Computer Science", goals: 1 },
+];
+
+export const cleanSheetsData: CleanSheet[] = [
+  { name: "Abdullahi Rabo", team: "Software Engineering", matches: 2 },
+  { name: "Khalifa", team: "Economics", matches: 1 },
+  { name: "Staff", team: "Staff Team", matches: 1 },
+];
