@@ -15,12 +15,6 @@ export interface Result {
 export const fixturesData: Fixture[] = [
   {
     sport: "Football",
-    teamA: "Public Administration",
-    teamB: "Cyber Security",
-    date: "2025-11-01T16:00:00+01:00",
-  },
-  {
-    sport: "Football",
     teamA: "Bio Technology",
     teamB: "Law",
     date: "2025-11-02T16:00:00+01:00",
@@ -28,13 +22,13 @@ export const fixturesData: Fixture[] = [
 
   {
     sport: "Football",
-    teamA: "TBD (Team 2)",
+    teamA: "Public Administration",
     teamB: "TBD (Team 4)",
     date: "2025-11-03T16:00:00+01:00",
   },
   {
     sport: "Football",
-    teamA: "TBD (Team 1)",
+    teamA: "Software Engineering",
     teamB: "TBD (Team 3)",
     date: "2025-11-04T16:00:00+01:00",
   },
@@ -53,6 +47,12 @@ export const fixturesData: Fixture[] = [
 ];
 
 export const resultsData: Result[] = [
+  {
+    sport: "Football",
+    teamA: "Public Administration",
+    teamB: "Cyber Security",
+    score: "1-0",
+  },
   {
     sport: "Football",
     teamA: "Economics",
@@ -89,6 +89,12 @@ export const resultsData: Result[] = [
     teamB: "Economics",
     score: "4-0",
   },
+  {
+    sport: "Football",
+    teamA: "Public Administration",
+    teamB: "Cyber Security",
+    score: "1-0",
+  },
 ];
 
 export interface FootballTableRow {
@@ -116,25 +122,25 @@ export const footballTableData: FootballTableRow[] = [
     pts: 6,
   },
   {
-    team: "Cyber Security",
-    p: 1,
-    w: 1,
+    team: "Public Administration",
+    p: 2,
+    w: 2,
     d: 0,
     l: 0,
     gf: 3,
-    ga: 2,
-    gd: 1,
-    pts: 3,
+    ga: 1,
+    gd: 2,
+    pts: 6,
   },
   {
-    team: "Public Administration",
-    p: 1,
+    team: "Cyber Security",
+    p: 2,
     w: 1,
     d: 0,
-    l: 0,
-    gf: 2,
-    ga: 1,
-    gd: 1,
+    l: 1,
+    gf: 3,
+    ga: 3,
+    gd: 0,
     pts: 3,
   },
   { team: "Staff", p: 2, w: 1, d: 0, l: 1, gf: 2, ga: 2, gd: 0, pts: 3 },
@@ -188,11 +194,12 @@ export const topScorersData: TopScorer[] = [
   { name: "Saidu Maigishir", team: "Software Engineering", goals: 2 },
   { name: "Sardauna", team: "Public Administration", goals: 2 },
   { name: "Sir Ibrahim", team: "Staff", goals: 1 },
-  { name: "Kakasha", team: "Computer Science", goals: 1 },
+  { name: "Salim Umar", team: "Public Admin", goals: 1 },
 ];
 
 export const cleanSheetsData: CleanSheet[] = [
   { name: "Abdullahi Rabo", team: "Software Engineering", matches: 2 },
   { name: "Khalifa", team: "Economics", matches: 1 },
   { name: "Staff", team: "Staff Team", matches: 1 },
+  { name: "Bobo", team: "Public Admin", matches: 1 },
 ];

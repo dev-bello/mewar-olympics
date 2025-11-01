@@ -63,34 +63,11 @@ export const sportsData: Sport[] = [
             registered: true,
             isCaptain: true,
           },
-          {
-            name: "Loyalty",
-            position: "Goalkeeper",
-            jerseyNumber: 2,
-            passportImage: "/placeholder-user.jpg",
-            level: 400,
-            registered: false,
-          },
+
           {
             name: "Abdullahi A",
             position: "Defender",
             jerseyNumber: 3,
-            passportImage: "/placeholder-user.jpg",
-            level: 400,
-            registered: false,
-          },
-          {
-            name: "Abdallah Tauhid",
-            position: "Midfielder",
-            jerseyNumber: 4,
-            passportImage: "/placeholder-user.jpg",
-            level: 400,
-            registered: false,
-          },
-          {
-            name: "Gibirilla",
-            position: "Defender",
-            jerseyNumber: 5,
             passportImage: "/placeholder-user.jpg",
             level: 400,
             registered: false,
@@ -119,14 +96,7 @@ export const sportsData: Sport[] = [
             level: 400,
             registered: false,
           },
-          {
-            name: "Muwaffaq",
-            position: "Forward",
-            jerseyNumber: 9,
-            passportImage: "/placeholder-user.jpg",
-            level: 400,
-            registered: false,
-          },
+
           {
             name: "Abdulhadi",
             position: "Midfielder",
@@ -223,14 +193,7 @@ export const sportsData: Sport[] = [
             level: 400,
             registered: false,
           },
-          {
-            name: "Bulama",
-            position: "Defender",
-            jerseyNumber: 22,
-            passportImage: "/placeholder-user.jpg",
-            level: 400,
-            registered: false,
-          },
+
           {
             name: "Santali",
             position: "Midfielder",
