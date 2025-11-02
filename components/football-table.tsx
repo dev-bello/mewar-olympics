@@ -10,10 +10,11 @@ import { footballTableData } from "@/lib/fixtures-data";
 
 export function FootballTable() {
   return (
-    <table className="w-full caption-bottom text-sm">
-      <TableHeader>
-        <TableRow>
-          <TableHead>Team</TableHead>
+    <div>
+      <table className="w-full caption-bottom text-sm">
+        <TableHeader>
+          <TableRow>
+            <TableHead>Team</TableHead>
             <TableHead>P</TableHead>
             <TableHead>W</TableHead>
             <TableHead>D</TableHead>
@@ -27,7 +28,12 @@ export function FootballTable() {
         <TableBody>
           {footballTableData.map((row, index) => (
             <TableRow key={index}>
-              <TableCell className="text-blue-500">{row.team}</TableCell>
+              <TableCell className="text-blue-500 flex items-center">
+                {index < 4 && (
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                )}
+                {row.team}
+              </TableCell>
               <TableCell>{row.p}</TableCell>
               <TableCell>{row.w}</TableCell>
               <TableCell>{row.d}</TableCell>
@@ -38,7 +44,18 @@ export function FootballTable() {
               <TableCell>{row.pts}</TableCell>
             </TableRow>
           ))}
-      </TableBody>
-    </table>
+        </TableBody>
+      </table>
+      <div className="mt-4 text-xs text-gray-500">
+        <div className="flex items-center">
+          <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+          <span>Qualified for Semi-finals</span>
+        </div>
+        <p className="mt-2">
+          Qualification is determined by points, then goal difference, then
+          goals scored.
+        </p>
+      </div>
+    </div>
   );
 }
