@@ -186,7 +186,7 @@ export const topScorersData: TopScorer[] = [
   { name: "Faiz Adeyemi", team: "Software Engineering", goals: 5 },
   { name: "Saidu Maigishir", team: "Software Engineering", goals: 2 },
   { name: "Sardauna", team: "Public Administration", goals: 2 },
-  { name: "Sir Ibrahim", team: "Staff", goals: 1 },
+  { name: "Jay-Jay Musa", team: "Bio Technology", goals: 2 },
   { name: "Salim Umar", team: "Public Admin", goals: 1 },
 ];
 
